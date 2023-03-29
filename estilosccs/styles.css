@@ -29,22 +29,18 @@ nav,
   margin: auto;
 }
 
-section .fraseprincipal {
+#icon-menu:hover {
+  opacity: 0.8;
+}
+
+.fraseprincipal {
   text-align: center;
   font-family: "Poppins";
   margin-top: 35px;
 }
 
-#icon-menu:hover {
-  opacity: 0.8;
-}
-
 img.logo {
   width: 160px;
-}
-
-.prueba {
-  background: blue;
 }
 
 section.contacto p {
