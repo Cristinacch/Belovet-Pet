@@ -43,6 +43,10 @@ img.logo {
   width: 160px;
 }
 
+.prueba {
+  background: blue;
+}
+
 section.contacto p {
   display: inline-block;
   width: 23%;
