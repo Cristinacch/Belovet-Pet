@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: blueviolet;
+  display: flex;
+}
+
+header div {
+  flex: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header div li {
+  display: inline-block;
+  padding: 0 14px;
+  font-family: "Poppins";
+}
+header div li a {
+  color: #ffffff;
+}
+
+nav,
+.banner {
+  width: 100%;
+  margin: auto;
+}
+
+section .fraseprincipal {
+  text-align: center;
+  font-family: "Poppins";
+  margin-top: 35px;
+}
+
+#icon-menu:hover {
+  opacity: 0.8;
+}
+
+img.logo {
+  width: 160px;
+}
+
+section.contacto p {
+  display: inline-block;
+  width: 23%;
+}
+
+.productos1,
+.productos2 {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  height: 1300px;
+  text-align: center;
+}
+
+footer {
+  background-color: blueviolet;
+  margin-top: 65px;
+  color: #FFF;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.imagenesAlimento {
+  margin: auto;
+  width: 85%;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.royal {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-rows: 50% 50%;
+  height: 950px;
+  text-align: center;
+}
+
+.rc {
+  margin: auto;
+  width: 85%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+section.Contacto {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+section.direccion {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+section.servicios {
+  text-align: left;
+  font-family: "Poppins";
+}
+
+section.servicios1 {
+  text-align: center;
+  font-family: "Poppins";
+  margin-top: 20px;
+}
+
+/*usuario ubica mouse sobre link*/
+a:hover {
+  color: salmon;
+}
+
+/*muestra enlaces activos*/
+.active {
+  color: gold;
+}
+
+/*AJUSTES RESPONSIVE*/
+/* Esto es para tablet */
+@media only screen and (max-width: 700px) {
+  header {
+    background-color: green;
+    display: flex;
+  }
+  .productos1, .productos2 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 750px;
+  }
+  main {
+    height: 2620px;
+  }
+}
+/* Esto es para movil */
+@media only screen and (max-width: 400px) {
+  .productos1, .productos2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    height: 330px;
+  }
+  header {
+    background-color: red;
+    display: flex;
+  }
+  main {
+    height: 4370px;
+  }
+}/*# sourceMappingURL=styles.css.map */
