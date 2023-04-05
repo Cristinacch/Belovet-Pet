@@ -46,18 +46,18 @@ img.logo {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% 25% 25% 25%;
-  height: 1600px;
+  height: 1740px;
   text-align: center;
   justify-content: space-evenly;
 }
 
 
 .product1{
-  width: 70%;
+  width: 64%;
   margin: auto;
   display: grid;
-  grid-template-columns: 40% 40% 40%;
-  grid-template-rows: 40% 40% 40%;
+  grid-template-columns: 35% 35% 35%;
+  grid-template-rows: 35% 35% 35%;
 }
 
 .bestPrice.big{
@@ -152,7 +152,7 @@ ul {
   border: none;
   background: none;
   outline: 0;
-  color: white;
+  color: rgb(8, 8, 8);
   border-bottom: 1px solid rgb(187, 127, 243);
 }
 
@@ -245,12 +245,15 @@ article button {
 /* Esto es para tablet */
 @media only screen and (max-width: 700px) {
   header {
-    background-color: green;
+    background-color:blueviolet;
     display: flex;
   }
+  .product1{
+    grid-template-columns: auto;
+  }
   .productos1, .productos2 {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 80% 80% 80%;
+    grid-template-rows: 80% 80% 80%;
     height: 750px;
   }
   main {
@@ -265,12 +268,17 @@ article button {
     height: 330px;
   }
   header {
-    background-color: red;
+    background-color: blueviolet;
     display: flex;
   }
   main {
     height: 4370px;
   }
+  footer{
+  background-color: blueviolet;
+  margin-top: 2800px;
+  }
+  
   /* LARGE SIZE */
 @media(min-width: 700px) {
   body {
