@@ -4,43 +4,48 @@
   padding: 0;
 }
 
-header {
-  background-color: blueviolet;
-  display: flex;
-}
-
-header div {
-  flex: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-header div li {
-  display: inline-block;
-  padding: 0 14px;
-  font-family: "Poppins";
-}
-header div li a {
-  color: #ffffff;
-}
-
-nav,
-.banner {
-  width: 100%;
-  margin: auto;
-  
-}
-
 .fraseprincipal {
   text-align: center;
   font-family: "Poppins";
   margin-top: 35px;
 }
-img.logo {
+
+a:hover {
+  color: salmon;
+}
+
+/*muestra enlaces activos*/
+.active {
+  color: gold;
+}
+
+header {
+  background-color: blueviolet;
+  display: flex;
+}
+header a {
+  color: #ffffff;
+}
+header a .logo {
   width: 160px;
+}
+header div {
+  flex: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header div nav {
+  width: 100%;
+  margin: auto;
+}
+header div nav li {
+  display: inline-block;
+  padding: 0 14px;
+  font-family: "Poppins";
 }
 
 .productos1,
-.productos2{
+.productos2 {
   width: 85%;
   margin: auto;
   display: grid;
@@ -51,8 +56,7 @@ img.logo {
   justify-content: space-evenly;
 }
 
-
-.product1{
+.product1 {
   width: 64%;
   margin: auto;
   display: grid;
@@ -60,17 +64,12 @@ img.logo {
   grid-template-rows: 35% 35% 35%;
 }
 
-.bestPrice.big{
+.bestPrice.big {
   font-size: 24px;
-  margin-top:12px;
+  margin-top: 12px;
   font-weight: 600;
   color: #0058a4;
   white-space: nowrap;
-
-}
-.h2{
-  text-align: left;
-  display: block;
 }
 
 footer {
@@ -81,48 +80,46 @@ footer {
   text-align: center;
   font-family: "Poppins";
 }
+footer .h2 {
+  text-align: left;
+  display: block;
+}
+
 /*Formulario Contacto*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
   background: #fffcfc;
   color: rgb(7, 0, 0);
   line-height: 1.6;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   padding: -1 1.5em;
 }
-
-.container {
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
+body .logo {
+  text-align: center;
+  font-size: 3em;
+  color: black;
 }
-
-ul {
+body ul {
   list-style: none;
   padding: 0;
 }
-
-.logo {
-  text-align: center;
-  font-size: 3em;
+body .banner {
+  width: 100%;
+  margin: auto;
 }
 
-.logo span {
-  color: blueviolet;
+.logo {
+  color: black;
 }
 
 .contact-wrapper {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-}
-
-.contact-wrapper > * {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
   padding: 1em;
 }
-
-.contact-form {
+.contact-wrapper .contact-form {
   background: #fcfafa;
 }
 
@@ -130,25 +127,23 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-.contact-form form label {
+.contact-form form .contact-form form label {
   display: block;
 }
-
-.contact-form form p {
+.contact-form form .contact-form form label .contact-form form p {
   margin: 0;
   padding: 1em;
 }
 
 .contact-form form .block {
-  grid-column: 1 / 3;
+  grid-column: 1/3;
 }
 
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
   width: 100%;
-  padding: .7em;
+  padding: 0.7em;
   border: none;
   background: none;
   outline: 0;
@@ -166,7 +161,7 @@ ul {
 .contact-form form button:hover,
 .contact-form form button:focus {
   background: rgba(137, 43, 226, 0.637);
-  color:rgb(247, 241, 245);
+  color: rgb(247, 241, 245);
   transition: background-color 1s ease-out;
   outline: 0;
 }
@@ -176,7 +171,7 @@ ul {
   background: rgba(137, 43, 226, 0.603);
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info ul, .contact-info h4, .contact-info p {
   text-align: center;
   margin: 1 0 1rem 0;
 }
@@ -186,26 +181,6 @@ section.direccion {
   font-family: "Poppins";
 }
 
-section.servicios {
-  text-align: left;
-  font-family: "Poppins";
-}
-
-section.servicios1 {
-  text-align: center;
-  font-family: "Poppins";
-  margin-top: 20px;
-}
-/*Fin Formulario Contacto*/
-/*usuario ubica mouse sobre link*/
-a:hover {
-  color: salmon;
-}
-/*muestra enlaces activos*/
-.active {
-  color: gold;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -213,11 +188,13 @@ a:hover {
 body {
   padding: -1rem;
 }
+
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
 }
+
 article {
   display: flex;
   flex-direction: column;
@@ -227,10 +204,12 @@ article {
   line-height: 2.6;
   align-items: center;
 }
+
 article img {
   order: -1;
   align-self: center;
 }
+
 article button {
   margin-top: auto;
   background: blueviolet;
@@ -241,23 +220,29 @@ article button {
   font-size: 1.2rem;
   cursor: pointer;
 }
+
 /*AJUSTES RESPONSIVE*/
 /* Esto es para tablet */
 @media only screen and (max-width: 700px) {
   header {
-    background-color:blueviolet;
+    background-color: blueviolet;
     display: flex;
   }
-  .product1{
-    grid-template-columns: auto;
+  .product1 {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
   }
   .productos1, .productos2 {
-    grid-template-columns: 80% 80% 80%;
-    grid-template-rows: 80% 80% 80%;
-    height: 750px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 780px;
   }
   main {
     height: 2620px;
+  }
+  footer {
+    background-color: blueviolet;
+    margin-top: 2280px;
   }
 }
 /* Esto es para movil */
@@ -274,13 +259,13 @@ article button {
   main {
     height: 4370px;
   }
-  footer{
-  background-color: blueviolet;
-  margin-top: 2800px;
+  footer {
+    background-color: blueviolet;
+    margin-top: 2600px;
   }
-  
   /* LARGE SIZE */
-@media(min-width: 700px) {
+}
+@media only screen and (max-width: 400px) and (min-width: 700px) {
   body {
     padding: 0 4em;
   }
@@ -297,4 +282,4 @@ article button {
     text-align: left;
   }
 }
-}/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
