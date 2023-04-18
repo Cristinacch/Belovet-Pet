@@ -8,6 +8,7 @@
     .product1{
         grid-template-columns: 100%;
         grid-template-rows: 100%;
+        width: 55%;
         }
     .productos1, .productos2 {
         grid-template-columns: 50% 50%;
@@ -27,18 +28,18 @@
     .productos1, .productos2 {
         grid-template-columns: 100%;
         grid-template-rows: 100%;
-        height: 330px;
+        height: 366px;
         }
     header {
         background-color: blueviolet;
         display: flex;
         }
     main {
-        height: 4370px;
+        height: 2200px;
         }
     footer{
         background-color: blueviolet;
-        margin-top: 2600px;
+        margin-top: 5300px;
         }
         
         /* LARGE SIZE */

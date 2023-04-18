@@ -27,7 +27,7 @@ header {
 
 .productos1,
 .productos2{
-    width: 85%;
+    width: 75%;
     margin: auto;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -38,7 +38,7 @@ header {
 }
 
 .product1{
-    width: 64%;
+    width: 75%;
     margin: auto;
     display: grid;
     grid-template-columns: 35% 35% 35%;
@@ -54,6 +54,7 @@ header {
 
 }
 
+
 footer {
     background-color: blueviolet;
     margin-top: 65px;
@@ -63,7 +64,6 @@ footer {
     font-family: "Poppins";
     .h2{
     text-align: left;
-    display: block;
+    display: flex;
     }
 }
-
